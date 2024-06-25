@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "b7a27c48-f4b7-411a-9ba0-2995964b2f53",
+		"name": "tcp_ip_server_poc",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "tcp_ip_server",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<Request xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope\" xmlns:SOAP-ENC=\"http://schemas.xmlsoap.org/soap/encoding\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:isomsg=\"urn:TSYS.Intl.messaging.iso8583.01.01\" xmlns:msgefi=\"urn:TSYS.Intl.messaging.efi.01.01\">\r\n    <Hdr>\r\n        <extFSVersion>1</extFSVersion>\r\n        <appName>MONITORPL</appName>\r\n        <clientID>349</clientID>\r\n        <msgID>ONL000000000118633270</msgID>\r\n        <msgMode>N</msgMode>\r\n        <recordType>AUTHISS</recordType>\r\n        <recordTStmp>2023-05-15T23:54:51Z</recordTStmp>\r\n    </Hdr>\r\n    <Sys>\r\n        <tstmp>2023-05-15T23:54:51Z</tstmp>\r\n        <custID>10084011</custID>\r\n        <aSerno>127452331</aSerno>\r\n        <cSerno>30126642</cSerno>\r\n        <acqSerno>0</acqSerno>\r\n        <merCtry/>\r\n        <src>APIMAS1</src>\r\n        <frmt>M</frmt>\r\n        <cntrCur>214</cntrCur>\r\n        <cntrAmt>0</cntrAmt>\r\n        <cntrOTBAmt>0</cntrOTBAmt>\r\n        <crdCur>214</crdCur>\r\n        <crdAmt>0</crdAmt>\r\n        <crdOTBAmt>0</crdOTBAmt>\r\n        <rsnCd>0</rsnCd>\r\n        <desc>The system has performed all the checks and authorises request.</desc>\r\n        <tID>MCBHG81AI0515</tID>\r\n        <grpInfo>\r\n            <group>\r\n                <name>00101942681214</name>\r\n                <currency>214</currency>\r\n                <otb>53877.41</otb>\r\n                <authAmt>0.00</authAmt>\r\n            </group>\r\n            <group>\r\n                <name>00101942673214</name>\r\n                <currency>214</currency>\r\n                <otb>196377.41</otb>\r\n                <authAmt>0.00</authAmt>\r\n            </group>\r\n        </grpInfo>\r\n        <extScore/>\r\n    </Sys>\r\n    <Iso>\r\n        <I000>0110</I000>\r\n        <I002>5526911020664225</I002>\r\n        <I003>000000</I003>\r\n        <I004>0</I004>\r\n        <I006>0</I006>\r\n        <I007>0515235450</I007>\r\n        <I011>138386</I011>\r\n        <I014>2411</I014>\r\n        <I015>0515</I015>\r\n        <I018>5969</I018>\r\n        <I022>010</I022>\r\n        <I026>0000</I026>\r\n        <I032>015611</I032>\r\n        <I038>055683</I038>\r\n        <I039>85</I039>\r\n        <I042>CARD ACCPT IDC</I042>\r\n        <I043>\r\n            <I043a>Garmin Pay</I043a>\r\n            <I043b>St. Louis</I043b>\r\n            <I043c>USA</I043c>\r\n        </I043>\r\n        <I048>T23022326033373326XXXXXXXXXXXXXXXXXXXXXXXXXX5630AIQ5EZAQV445AQF144AQS007ARA5EZ753201031000202R003032000402R10502R2710418C</I048>\r\n        <I049>840</I049>\r\n        <I050>840</I050>\r\n        <I051>214</I051>\r\n        <I052>N</I052>\r\n        <I061>\r\n            <I061m>102510900000084063368</I061m>\r\n        </I061>\r\n        <I063>\r\n            <I063m>MCBHG81AI</I063m>\r\n        </I063>\r\n        <I095>0</I095>\r\n        <I124>TED00000293607462b4e30d6f4bba13286c5f74b4660fccdd00S</I124>\r\n        <I142>N</I142>\r\n    </Iso>\r\n</Request>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": "http://localhost:9002/tcp-ip/send-request"
+			},
+			"response": [
+				{
+					"name": "tcp_ip_server",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<Request xmlns:SOAP-ENV=http://schemas.xmlsoap.org/soap/envelope xmlns:SOAP-ENC=http://schemas.xmlsoap.org/soap/encoding xmlns:xsi=http://www.w3.org/2001/XMLSchema-instance xmlns:xsd=http://www.w3.org/2001/XMLSchema xmlns:isomsg=\"urn:TSYS.Intl.messaging.iso8583.01.01\" xmlns:msgefi=\"urn:TSYS.Intl.messaging.efi.01.01\">\r\n\t<Hdr>\r\n\t\t<extFSVersion>1</extFSVersion>\r\n\t\t<appName>MONITORPL</appName>\r\n\t\t<clientID>349</clientID>\r\n\t\t<msgID>ONL000000000118633270</msgID>\r\n\t\t<msgMode>N</msgMode>\r\n\t\t<recordType>AUTHISS</recordType>\r\n\t\t<recordTStmp>2023-05-15T23:54:51Z</recordTStmp>\r\n\t</Hdr>\r\n\t<Sys>\r\n\t\t<tstmp>2023-05-15T23:54:51Z</tstmp>\r\n\t\t<custID>10084011</custID>\r\n\t\t<aSerno>127452331</aSerno>\r\n\t\t<cSerno>30126642</cSerno>\r\n\t\t<acqSerno>0</acqSerno>\r\n\t\t<merCtry/>\r\n\t\t<src>APIMAS1</src>\r\n\t\t<frmt>M</frmt>\r\n\t\t<cntrCur>214</cntrCur>\r\n\t\t<cntrAmt>0</cntrAmt>\r\n\t\t<cntrOTBAmt>0</cntrOTBAmt>\r\n\t\t<crdCur>214</crdCur>\r\n\t\t<crdAmt>0</crdAmt>\r\n\t\t<crdOTBAmt>0</crdOTBAmt>\r\n\t\t<rsnCd>0</rsnCd>\r\n\t\t<desc>The system has performed all the checks and authorises request.</desc>\r\n\t\t<tID>MCBHG81AI0515</tID>\r\n\t\t<grpInfo>\r\n\t\t\t<group>\r\n\t\t\t\t<name>00101942681214</name>\r\n\t\t\t\t<currency>214</currency>\r\n\t\t\t\t<otb>53877.41</otb>\r\n\t\t\t\t<authAmt>0.00</authAmt>\r\n\t\t\t</group>\r\n\t\t\t<group>\r\n\t\t\t\t<name>00101942673214</name>\r\n\t\t\t\t<currency>214</currency>\r\n\t\t\t\t<otb>196377.41</otb>\r\n\t\t\t\t<authAmt>0.00</authAmt>\r\n\t\t\t</group>\r\n\t\t</grpInfo>\r\n\t\t<extScore/>\r\n\t</Sys>\r\n\t<Iso>\r\n\t\t<I000>0110</I000>\r\n\t\t<I002>5526911020664225</I002>\r\n\t\t<I003>000000</I003>\r\n\t\t<I004>0</I004>\r\n\t\t<I006>0</I006>\r\n\t\t<I007>0515235450</I007>\r\n\t\t<I011>138386</I011>\r\n\t\t<I014>2411</I014>\r\n\t\t<I015>0515</I015>\r\n\t\t<I018>5969</I018>\r\n\t\t<I022>010</I022>\r\n\t\t<I026>0000</I026>\r\n\t\t<I032>015611</I032>\r\n\t\t<I038>055683</I038>\r\n\t\t<I039>85</I039>\r\n\t\t<I042>CARD ACCPT IDC</I042>\r\n\t\t<I043>\r\n\t\t\t<I043a>Garmin Pay</I043a>\r\n\t\t\t<I043b>St. Louis</I043b>\r\n\t\t\t<I043c>USA</I043c>\r\n\t\t</I043>\r\n\t\t<I048>T23022326033373326XXXXXXXXXXXXXXXXXXXXXXXXXX5630AIQ5EZAQV445AQF144AQS007ARA5EZ753201031000202R003032000402R10502R2710418C</I048>\r\n\t\t<I049>840</I049>\r\n\t\t<I050>840</I050>\r\n\t\t<I051>214</I051>\r\n\t\t<I052>N</I052>\r\n\t\t<I061>\r\n\t\t\t<I061m>102510900000084063368</I061m>\r\n\t\t</I061>\r\n\t\t<I063>\r\n\t\t\t<I063m>MCBHG81AI</I063m>\r\n\t\t</I063>\r\n\t\t<I095>0</I095>\r\n\t\t<I124>TED00000293607462b4e30d6f4bba13286c5f74b4660fccdd00S</I124>\r\n\t\t<I142>N</I142>\r\n\t</Iso>\r\n</Request>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": "http://localhost:9002/tcp-ip/send-request"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "xml",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/xml;charset=UTF-8"
+						},
+						{
+							"key": "content-length",
+							"value": "2038"
+						}
+					],
+					"cookie": [],
+					"body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Request xmlns:SOAP-ENV=http://schemas.xmlsoap.org/soap/envelope xmlns:SOAP-ENC=http://schemas.xmlsoap.org/soap/encoding xmlns:xsi=http://www.w3.org/2001/XMLSchema-instance xmlns:xsd=http://www.w3.org/2001/XMLSchema xmlns:isomsg=\"urn:TSYS.Intl.messaging.iso8583.01.01\" xmlns:msgefi=\"urn:TSYS.Intl.messaging.efi.01.01\">\n    <Hdr>\n        <extFSVersion>1</extFSVersion>\n        <appName>MONITORPL</appName>\n        <clientID>349</clientID>\n        <msgID>ONL000000000118633270</msgID>\n        <msgMode>N</msgMode>\n        <recordType>AUTHISS</recordType>\n        <recordTStmp>2023-05-15T23:54:51Z</recordTStmp>\n    </Hdr>\n    <Sys>\n        <tstmp>2023-05-15T23:54:51Z</tstmp>\n        <custID>10084011</custID>\n        <aSerno>127452331</aSerno>\n        <cSerno>30126642</cSerno>\n        <acqSerno>0</acqSerno>\n        <merCtry/>\n        <src>APIMAS1</src>\n        <frmt>M</frmt>\n        <cntrCur>214</cntrCur>\n        <cntrAmt>0</cntrAmt>\n        <cntrOTBAmt>0</cntrOTBAmt>\n        <crdCur>214</crdCur>\n        <crdAmt>0</crdAmt>\n        <crdOTBAmt>0</crdOTBAmt>\n        <rsnCd>0</rsnCd>\n        <desc>The system has performed all the checks and authorises request.</desc>\n        <tID>MCBHG81AI0515</tID>\n        <grpInfo>\n            <group>\n                <name>00101942681214</name>\n                <currency>214</currency>\n                <otb>53877.41</otb>\n                <authAmt>0.00</authAmt>\n            </group>\n            <group>\n                <name>00101942673214</name>\n                <currency>214</currency>\n                <otb>196377.41</otb>\n                <authAmt>0.00</authAmt>\n            </group>\n        </grpInfo>\n        <extScore/>\n    </Sys>\n    <Iso>\n        <I000>0110</I000>\n        <I002>5526911020664225</I002>\n        <I003>000000</I003>\n        <I004>0</I004>\n        <I006>0</I006>\n        <I007>0515235450</I007>\n        <I011>138386</I011>\n        <I014>2411</I014>\n        <I015>0515</I015>\n        <I018>5969</I018>\n        <I022>010</I022>\n        <I026>0000</I026>\n        <I032>015611</I032>\n        <I038>055683</I038>\n        <I039>85</I039>\n        <I042>CARD ACCPT IDC</I042>\n        <I043>\n            <I043a>Garmin Pay</I043a>\n            <I043b>St. Louis</I043b>\n            <I043c>USA</I043c>\n        </I043>\n        <I048>T23022326033373326XXXXXXXXXXXXXXXXXXXXXXXXXX5630AIQ5EZAQV445AQF144AQS007ARA5EZ753201031000202R003032000402R10502R2710418C</I048>\n        <I049>840</I049>\n        <I050>840</I050>\n        <I051>214</I051>\n        <I052>N</I052>\n        <I061>\n            <I061m>102510900000084063368</I061m>\n        </I061>\n        <I063>\n            <I063m>MCBHG81AI</I063m>\n        </I063>\n        <I095>0</I095>\n        <I124>TED00000293607462b4e30d6f4bba13286c5f74b4660fccdd00S</I124>\n        <I142>N</I142>\n    </Iso>\n</Request>"
+				}
+			]
+		}
+	]
+}
